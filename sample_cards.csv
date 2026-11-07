@@ -1,0 +1,7 @@
+front,back,tag
+"SM-2: what happens to the interval when you forget a card (quality < 3)?","It resets: repetitions go to 0 and the next interval is 1 day.",sm2
+"SM-2: how big is the interval after the first successful review (quality >= 3)?","1 day.",sm2
+"SM-2: what happens on the third successful review in a row?","The interval grows by the card's ease factor: interval x EF, rounded, never smaller than before.",sm2
+"What is an OpenAI-compatible endpoint?","Any server (Ollama, LM Studio, vLLM...) exposing /chat/completions with OpenAI-style request and response JSON.",ai
+"In chess, what does en passant mean?","A pawn captures an enemy pawn that just advanced two squares, as if it had moved only one.",chess
+"FFXIV: how many roles sit in a standard endgame raid party?","Two tanks, two healers and four DPS make an eight-player party.",ffxiv

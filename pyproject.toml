@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spaced-repetition-scheduler-cli"
+version = "0.1.0"
+description = "SM-2 style spaced repetition scheduler for anything: CSV import, terminal or plain HTML queue, optional local-LLM polish."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Asdale Dynamics, LLC" }]
+keywords = ["spaced-repetition", "sm2", "flashcards", "review-scheduler", "local-first"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+srs = "srs_scheduler.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
